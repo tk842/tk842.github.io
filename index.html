@@ -123,6 +123,11 @@
       border-radius: 20px;
       font-size: 0.88rem;
       font-weight: 600;
+      transition: transform 0.2s ease;
+    }
+
+    .skill-tag:hover {
+      transform: translateY(-2px);
     }
 
     .skill-tag.blue { background-color: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; }
@@ -137,6 +142,7 @@
       background: #faf5ff;
       border-left: 5px solid #8b5cf6;
       margin-bottom: 1.25rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .project-card:nth-child(2) {
@@ -147,6 +153,11 @@
     .project-card:nth-child(3) {
       background: #f0fdf4;
       border-left-color: #10b981;
+    }
+
+    .project-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.05);
     }
 
     .project-card:last-child {
@@ -176,17 +187,26 @@
       font-size: 0.9rem;
     }
 
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
       color: var(--text-muted);
       font-size: 0.9rem;
       margin-top: 2.5rem;
+      padding-bottom: 1rem;
     }
 
     footer a {
       color: var(--primary);
       text-decoration: none;
       font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -199,11 +219,14 @@
       </div>
 
       <h1>Tarini Kanapuram</h1>
-      <div class="subtitle">Rutgers Business School | Honors College Finance Major (GPA: 4.00)</div>
+      <!-- Subtitle with GPA removed -->
+      <div class="subtitle">Rutgers Business School | Honors College Finance Major</div>
       
+      <!-- Requirement 1: Personal Statement -->
       <p class="tagline">An ambitious finance student at Rutgers Business School with hands-on experience in M&A origination, venture capital, and valuation modeling, dedicated to pursuing a career in corporate banking and debt capital markets.</p>
     </header>
 
+    <!-- Requirement 2: Colorful Skills Showcase -->
     <section id="skills">
       <h2>✨ Technical & Financial Skills</h2>
       <ul class="skills-list">
@@ -217,25 +240,26 @@
       </ul>
     </section>
 
+    <!-- Requirement 3: Projects Section with Direct File Attachments -->
     <section id="projects">
       <h2>🚀 Finance & Strategy Projects</h2>
 
       <div class="project-card">
         <div class="project-title">🏆 Johnson & Johnson Market Entry Case Competition (1st Place Winner)</div>
-        <p class="project-desc">Analyzed R&D cost structures, pricing, revenue drivers, and competitive dynamics to formulate a winning market entry and long-term valuation strategy for barbed suture surgical tech.</p>
-        <a href="https://github.com/tarinik09" target="_blank" class="project-link">View Project Summary on GitHub &rarr;</a>
+        <p class="project-desc">Formulated Aegis & Aegis's $13.21B NPV wound closure expansion strategy. Evaluated R&D choices, pricing, plant extension CapEx, and financial sensitivity modeling for barbed sutures.</p>
+        <a href="j&j.pptx - Google Slides.pdf" target="_blank" class="project-link">📄 View J&J Presentation Deck (PDF) &rarr;</a>
       </div>
 
       <div class="project-card">
         <div class="project-title">📈 Teladoc Health Equity Research & Stock Pitch (LIBOR Competition)</div>
-        <p class="project-desc">Developed a comprehensive buy-side investment thesis for Teladoc Health using Porter's Five Forces, valuation modeling, and risk mitigation strategies for the Bender Trust Stock Pitch Competition.</p>
-        <a href="https://github.com/tarinik09" target="_blank" class="project-link">View Stock Pitch Repo &rarr;</a>
+        <p class="project-desc">Constructed a BUY thesis for Teladoc Health featuring Porter's Five Forces analysis, 3-statement financial modeling forecasts, and EV/EBITDA valuation multiples.</p>
+        <a href="bender.pptx - Google Slides.pdf" target="_blank" class="project-link">📄 View Teladoc Stock Pitch Deck (PDF) &rarr;</a>
       </div>
 
       <div class="project-card">
         <div class="project-title">💡 Deloitte Telehealth Platform Growth Strategy (3rd Place)</div>
-        <p class="project-desc">Executed market analysis to identify core challenges facing telehealth adoption; developed a multi-phase growth and financial scalability strategy backed by community partnership data.</p>
-        <a href="https://github.com/tarinik09" target="_blank" class="project-link">View Strategy Deck Repo &rarr;</a>
+        <p class="project-desc">Designed HealthE's strategic roadmap addressing adoption barriers, community-based ambassador partnerships, and monthly access models for long-term user retention.</p>
+        <a href="deloitte.pptx" target="_blank" class="project-link">📄 View Deloitte Strategy Deck (PPTX) &rarr;</a>
       </div>
     </section>
 
