@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarini Kanapuram | Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --primary: #1e3a8a; /* Professional navy blue tone */
+      --border: #e2e8f0;
+      --accent-bg: #eff6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2.5rem 1rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    section {
+      background: var(--card-bg);
+      padding: 1.75rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      margin-bottom: 2rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      list-style: none;
+    }
+
+    .skill-tag {
+      background-color: var(--accent-bg);
+      color: var(--primary);
+      padding: 0.4rem 0.85rem;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border: 1px solid #dbeafe;
+    }
+
+    .project-card {
+      margin-bottom: 1.5rem;
+    }
+
+    .project-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .project-desc {
+      color: var(--text-muted);
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    .project-link {
+      display: inline-block;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 2.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Tarini Kanapuram</h1>
+      <div class="subtitle">Rutgers Business School | Honors College Finance Major (GPA: 4.00)</div>
+      <!-- Requirement 1: Personal Statement (One concise, impactful sentence) -->
+      <p class="tagline">An ambitious finance student at Rutgers Business School with hands-on experience in M&A origination, venture capital, and valuation modeling, dedicated to pursuing a career in corporate banking and debt capital markets.</p>
+    </header>
+
+    <!-- Requirement 2: Skills Showcase -->
+    <section id="skills">
+      <h2>Technical & Financial Skills</h2>
+      <ul class="skills-list">
+        <li class="skill-tag">Financial Accounting & Management</li>
+        <li class="skill-tag">Statistical Methods & Financial Modeling</li>
+        <li class="skill-tag">M&A Target Screening & Deal Evaluation</li>
+        <li class="skill-tag">Valuation & Equity Research (SWOT, Porter's Five Forces)</li>
+        <li class="skill-tag">Credit & Market Risk Assessment</li>
+        <li class="skill-tag">Advanced Microsoft Excel & PowerPoint</li>
+        <li class="skill-tag">Go-To-Market & Revenue Growth Analysis</li>
+      </ul>
+    </section>
+
+    <!-- Requirement 3: Projects Section (3 Finance Case Studies / Competitions) -->
+    <section id="projects">
+      <h2>Finance & Strategy Projects</h2>
+
+      <div class="project-card">
+        <div class="project-title">1. Johnson & Johnson Market Entry Case Competition (1st Place Winner)</div>
+        <p class="project-desc">Analyzed R&D cost structures, pricing, revenue drivers, and competitive dynamics to formulate a winning market entry and long-term valuation strategy for barbed suture surgical tech.</p>
+        <a href="https://github.com/tarinik09" target="_blank" class="project-link">View Project Summary on GitHub &rarr;</a>
+      </div>
+
+      <hr style="margin: 1.25rem 0; border: none; border-top: 1px solid var(--border);" />
+
+      <div class="project-card">
+        <div class="project-title">2. Teladoc Health Equity Research & Stock Pitch (LIBOR Competition)</div>
+        <p class="project-desc">Developed a comprehensive buy-side investment thesis for Teladoc Health using Porter's Five Forces, valuation modeling, and risk mitigation strategies for the Bender Trust Stock Pitch Competition.</p>
+        <a href="https://github.com/tarinik09" target="_blank" class="project-link">View Stock Pitch Repo &rarr;</a>
+      </div>
+
+      <hr style="margin: 1.25rem 0; border: none; border-top: 1px solid var(--border);" />
+
+      <div class="project-card">
+        <div class="project-title">3. Deloitte Telehealth Platform Growth & Scalability Strategy (3rd Place)</div>
+        <p class="project-desc">Executed market analysis to identify core challenges facing telehealth adoption; developed a multi-phase growth and financial scalability strategy backed by community partnership data.</p>
+        <a href="https://github.com/tarinik09" target="_blank" class="project-link">View Strategy Deck Repo &rarr;</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Tarini Kanapuram | <a href="https://www.linkedin.com/in/tarini-kanapuram-57170324b" target="_blank" style="color: var(--primary);">LinkedIn Profile</a></p>
+    </footer>
+  </div>
+
+</body>
+</html>
